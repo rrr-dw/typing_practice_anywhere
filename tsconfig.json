@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "strict":true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution":"Node",
+    "jsx": "react"
+  },
+  "include":["src"],
+  "exclude":["node_modules","dist"]
+}

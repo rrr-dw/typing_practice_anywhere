@@ -1,0 +1,55 @@
+#container{
+	position: absolute;
+	left: 0;
+	right:0;
+	opacity: .96;
+	margin: 5px 0;
+	padding: .5em 0;
+	height:fit-content;
+	box-shadow: 0 0 5px;
+	box-sizing:content-box;
+	transition: top .25s ease-out 0s;
+	&.noAnimation{
+		transition:none;
+	}
+}
+
+@mixin typingText{
+	opacity: 1 !important;
+	background-color: transparent !important;
+	resize: none !important;
+	border: none !important;
+	border-radius: 0 !important;
+	outline: none !important;
+	overflow: visible !important;
+	box-shadow: none !important;
+	box-sizing: content-box !important;
+	word-break:normal !important;
+	overflow-wrap:break-word !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	white-space:pre-wrap !important;
+	
+}
+
+#typingTextTextArea{
+	@include typingText;
+	position:absolute !important;
+	height:100% !important;
+	z-index:0 !important;
+	min-height:unset !important;
+	max-height:unset !important;
+}
+
+#typingTextDiv{
+	@include typingText;
+	position:relative !important;
+	height:fit-content !important;
+	z-index:-1 !important;
+}
+
+.span{
+	@include typingText;
+	position:absolute !important;
+	background:transparent !important;
+}

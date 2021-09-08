@@ -1,0 +1,67 @@
+
+@mixin floatingMessageBorderStyle($dir){
+    border-style: dotted;
+    border-color: coral;
+    border-width: thin;
+	border-#{$dir}-style: solid;
+	border-#{$dir}-color: crimson;
+	border-#{$dir}-width: thick;
+}
+
+.container{
+	z-index:1;
+	all:revert;
+	position: fixed;
+	display:flex;
+	right: 0px;
+	bottom: 0px;
+	outline:none;
+	flex-direction:column;
+	align-items:flex-end;
+	pointer-events:none;
+
+	div{
+		pointer-events:auto;
+		all:revert;
+		@include floatingMessageBorderStyle(right);
+		background-color:aliceblue;
+		color:black;
+		padding:.5em 5em;
+		margin-top:.1em;
+		width:fit-content;
+		height:fit-content;
+		border-radius: 0.25em;
+		box-shadow: 0 0 5px;
+
+		font-size:small;
+		table {
+			all:revert;
+			min-width:unset;
+			border:0;
+			margin:0;
+			tbody tr td{
+				all:revert;
+				border:0;
+				text-align:right;
+				font-size:medium;
+				padding:0;
+				min-width:2.5em;
+			}
+		}
+		ul{
+			all:revert;
+			margin:0;
+			padding:0;
+		}
+	}
+}
+
+.container.altPosition{
+	left:0;
+	right:revert;
+	align-items:flex-start;
+
+	div{
+		@include floatingMessageBorderStyle(left);
+	}
+}

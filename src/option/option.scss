@@ -1,0 +1,41 @@
+$bright:rgb(255, 249, 240);
+$dark:rgb(77, 73, 69);
+$point:#fb964e;
+
+body{
+	background: $bright;
+}
+
+div.optionBox{
+	background:$dark;
+	color:$bright;
+	padding:2em;
+	padding-top:0;
+	margin:2em;
+	border-top: solid 1em $point;
+	display:flex;
+	flex-flow:column;
+
+	.optionItem{
+		display:flex;
+		flex-flow:row;
+		justify-content: space-between;
+    	align-items: center;
+		margin-bottom: 1em;
+	}
+}
+
+#save{
+	margin:2em;
+	height:3em;
+}
+#root{
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+button{
+	width:20em;
+	height:2em;
+}

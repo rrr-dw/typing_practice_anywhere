@@ -1,0 +1,20 @@
+.nomouse{
+	pointer-events:none;
+}
+
+span.wrong, span.ok, span.hint{
+	white-space:pre-wrap
+}
+span.wrong{
+	color:transparent !important;
+}
+span.composing{
+	color:transparent !important;
+}
+span.ok{
+	opacity:0;
+}
+span.hint{
+	background-color:transparent !important;
+	opacity:.5;
+}

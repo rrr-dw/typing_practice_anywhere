@@ -1,0 +1,21 @@
+.container{
+	z-index:0;
+}
+.highlighted{
+	all:revert;
+	outline:none;
+	position: absolute;
+}
+
+.skip{
+	z-index:auto;
+}
+
+.input{
+	position:fixed;
+	width: 0;
+	height: 0;
+	border: 0;
+	padding: 0;
+	opacity: 0;
+}

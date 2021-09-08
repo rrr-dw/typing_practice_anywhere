@@ -1,0 +1,44 @@
+{
+	"manifest_version": 3,
+	"name": "Typeing Practice Anywhere",
+	"version": "0.1",
+	"description": "Practice Keyboard Typing with any webpages.",
+	"background": {
+		"service_worker": "background.js"
+	},
+	"action": {
+		"default_title":"Typing Practice Anywhere",
+		"default_icon":{
+			"128":"icon/ty+128.png",
+			"48":"icon/ty+48.png",
+			"16": "icon/ty+16.png"
+		}
+	},
+	"icons": {
+		"128": "icon/ty+128.png",
+		"48": "icon/ty+48.png",
+		"16": "icon/ty+16.png"
+	},
+	"content_scripts": [
+		{
+			"js": [
+				"contentScript.js"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"options_page": "option.html",
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"contentScript.css"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"permissions": ["storage"]
+}
