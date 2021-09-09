@@ -1,7 +1,7 @@
 import React, { ChangeEventHandler, Component, ContextType, createRef, Fragment } from "react";
 import { from, Observable } from "rxjs";
 import { map } from "rxjs/operators";
-import { themeContextType } from "../contexts/theme";
+import { themeContextType } from "../preference/theme";
 
 import styles from "./placeholderComponent.module.scss";
 import bStyles from "./typingOverlayInputBox.module.scss";

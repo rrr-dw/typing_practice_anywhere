@@ -2,7 +2,6 @@ import React, { ContextType, Fragment } from "react";
 
 
 type OptionMethod<T> = {
-	_set: React.Component < Props, T > ["setState"],
 	_save: () => void,
 	_reset: ()=>void,
 };
@@ -30,7 +29,6 @@ export const createChromeSyncedReactContext = <T,>(defaultOption: T) => {
 			super(props);
 			this.state = {
 				...defaultOption,
-				_set: this.setState.bind(this),
 				_save: this._save,
 				_reset: this._reset
 			} as State<T>;

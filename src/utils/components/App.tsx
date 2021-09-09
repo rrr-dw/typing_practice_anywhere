@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import { ThemeContextProvider } from "../contexts/theme";
+import { ThemeContextProvider } from "../preference/theme";
 import { ChromeRuntimeMessage } from "../ChromeRuntimeMessage";
 import { InteractiveSelector, InteractiveSelectorResCb } from "./interactiveSelector";
 import { LazyElements } from "../lazyElements";
 import { PlainTyping } from "./plainTyping";
-import { GeneralOptionContextProvider } from "../contexts/general";
+import { GeneralOptionContextProvider } from "../preference/general";
 
 
 type AppProps = {

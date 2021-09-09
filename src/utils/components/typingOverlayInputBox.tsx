@@ -1,11 +1,11 @@
 import React, { Component, ContextType, createRef, FormEventHandler, Fragment } from "react";
-import { themeContextType } from "../contexts/theme";
+import { themeContextType } from "../preference/theme";
 import { LazyElements } from "../lazyElements";
 import { PlaceholderComponent, PlaceholderUpdateCmd } from "./placeholderComponent";
 import styles from "./typingOverlayInputBox.module.scss";
 import Rx, { fromEvent, merge, Observable, Subject } from "rxjs";
 import { filter, map } from "rxjs/operators";
-import { generalOptionContextType } from "../contexts/general";
+import { generalOptionContextType } from "../preference/general";
 
 
 const getTextContent = (nd: Node):string => {

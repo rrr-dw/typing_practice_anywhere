@@ -4,7 +4,7 @@ import styles from "./interactiveSelector.module.scss";
 import { FloatingMessage } from "./floatingMessage";
 import { LazyElements } from "../lazyElements";
 import { QueryString } from "../QueryString";
-import { themeContextType } from "../contexts/theme";
+import { themeContextType } from "../preference/theme";
 import { KeyboardInteraction } from "./keyboardInteraction";
 
 type MouseEventCb = (ev:React.MouseEvent<HTMLDivElement, MouseEvent>)=>void;

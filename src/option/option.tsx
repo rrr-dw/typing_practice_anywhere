@@ -1,7 +1,7 @@
 import React, { Component, FC, Fragment } from "react";
 import ReactDOM from 'react-dom';
-import { generalOptionContextType, GeneralOptionContextProvider } from "../utils/contexts/general";
-import { themeContextType, ThemeContextProvider } from "../utils/contexts/theme";
+import { generalOptionContextType, GeneralOptionContextProvider } from "../utils/preference/general";
+import { themeContextType, ThemeContextProvider } from "../utils/preference/theme";
 import "./option.scss";
 import { SyncedCheckbox, SyncedColorPicker } from "./syncedInput";
 

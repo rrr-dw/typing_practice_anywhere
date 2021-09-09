@@ -1,6 +1,6 @@
 import React, { Component, ContextType, createRef, Fragment } from "react";
-import { generalOptionContextType } from "../contexts/general";
-import { themeContextType } from "../contexts/theme";
+import { generalOptionContextType } from "../preference/general";
+import { themeContextType } from "../preference/theme";
 import { formatMs } from "../general/formatMs";
 import { LazyElements } from "../lazyElements";
 import { FloatingMessage } from "./floatingMessage";
