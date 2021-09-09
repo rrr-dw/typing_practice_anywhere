@@ -1,9 +1,17 @@
 # Typing Practice Anywhere
 ![](./public/icon/ty+128.png)
 
-* Motivates typing practice with your favorite text to type along.
-* Helps Learning foreign languages by typing foreign web contents.
-* Helps memorizing spellings / lyrics / phrases.
+Typing Practice Anywhere is a chrome extension that motivates you to practice keyboard typing.
+
+What It Does:
+* Motivates typing practice with your favorite text to type.
+* Shows typing practice overlay inside any webpages.
+* Analyzes your typing performance.
+
+Use Cases:
+* Checking how fast you can type with the web content you interested.
+* memorizing terminology / spelling / lyrics / phrases.
+* Learning foreign languages by typing foreign web contents.
 
 # Practice Typing with any Web Contents
 ![](./doc/lyrics.gif)
