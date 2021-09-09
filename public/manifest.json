@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "Typeing Practice Anywhere",
-	"version": "0.1",
+	"version": "0.1.1",
 	"description": "Practice Keyboard Typing with any webpages.",
 	"background": {
 		"service_worker": "background.js"

@@ -9,9 +9,9 @@ What It Does:
 * Analyzes your typing performance.
 
 Use Cases:
-* Checking how fast you can type with the web content you interested in.
-* memorizing terminology / spelling / lyrics / phrases.
-* Learning foreign languages by typing foreign web contents.
+* Checking how fast you can type with the web content you interested in
+* memorizing terminology / spelling / lyrics / phrases
+* Learning foreign languages by typing foreign web contents
 
 # Practice Typing with any Web Contents
 ![](./doc/lyrics.gif)
@@ -26,6 +26,16 @@ There are a input method called "composing". It's often used when there are one-
 
 Typing Practice Anywhere comes with a special handling for that kind of input method. There's nothing to care about, just type as you normally do, then the extension will do the job.
 
+# Press <kbd>Tab↹</kbd> to skip characters
+
+You can insert the correct characters by pressing the <kbd>Tab</kbd> key.
+
+Depending on your keyboard or input method, you may face a un-typeable character. In that case, no need to worry, you can skip that character by pressing the <kbd>Tab</kbd> key. This will insert the un-typeable character.
+
+This feature works with selection as well. If you press the <kbd>Tab</kbd> key after selecting part of the text you typed, the whole selection will be replaced by the correct text.
+
+When Typing Practice Anywhere've done something stupid, and picked some text that you don't want to type, you may want to press the <kbd>Tab</kbd> key continuously to skip every character in the box. That would work, but in this case, <kbd>Shift</kbd>+<kbd>Tab</kbd> is the right hammer to go with. Using <kbd>Shift</kbd>+<kbd>Tab</kbd>, you can proceed to the next text like when you've typed everything correctly. The extension will skip the whole box and pick another box, hoping you like it this time.
+
 # Customizable Theme
 ![](./doc/option.gif)
 (image from https://material.io/design/color/the-color-system.html#color-usage-and-palettes)
@@ -33,7 +43,7 @@ Typing Practice Anywhere comes with a special handling for that kind of input me
 Choose the best-fit colors for your environment! Changes will be applied immediately so that you can see how cool your color looks like as you tweak them.
 
 # Alpha Version Now
-I used to type along what I want to memorize, and it was quite effective. As many of the contents I was memorizing were from the Internet, I have automated what I was doing by integrating the process into the web browser as this extension.
+I used to type out what I want to memorize, and it was quite effective. As many of the contents I was memorizing were from the Internet, I have automated what I was doing by integrating the process into the web browser as this extension.
 
 I'm now actively maintaining this extension to fix bugs and expand functionality. So any bug reports or feature requests are welcome. I'll appreciate any of them.
 
@@ -42,5 +52,9 @@ I'm now actively maintaining this extension to fix bugs and expand functionality
 * elaborated selecting mode
 * detailed result screen
 
+# Changelog
+* 0.1.1
+  * bugfix: the extension's option page failed to load initial theme
+
 # See Also
-* chrome webstore
+* [chrome webstore](https://chrome.google.com/webstore/detail/typeing-practice-anywhere/ndioekgfjeeapmocoohoboiaeigjeojg)
