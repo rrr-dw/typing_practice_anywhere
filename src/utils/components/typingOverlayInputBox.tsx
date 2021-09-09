@@ -25,10 +25,11 @@ const getTextContent = (nd: Node):string => {
 		return nd.innerText;
 	// }
 }
-const getBoundingRect = (nd:Node) => {
-	const range = document.createRange();
-	range.selectNodeContents(nd);
-	return range.getBoundingClientRect();
+const getBoundingRect = (nd: Element) => {
+	return nd.getBoundingClientRect();
+	// const range = document.createRange();
+	// range.selectNodeContents(nd);
+	// return range.getBoundingClientRect();
 }
 type State = {
 	containerDivStyle: React.CSSProperties,
@@ -66,10 +67,7 @@ const isElementInvisible = (el:Element, textRect?:DOMRect,computedStyle?:CSSStyl
 
 
 	if (!textRect) {
-
-		const range = document.createRange();
-		range.selectNodeContents(el);
-		textRect = range.getBoundingClientRect();
+		textRect = getBoundingRect(el);
 	}
 
 	if (
@@ -137,7 +135,7 @@ export class TypingOverlayInputBox extends Component<Props, State>{
 			range.selectNodeContents(this.currentElement);
 
 			if (!textRect)
-				textRect = this.currentElement.getBoundingClientRect();
+				textRect = getBoundingRect(this.currentElement);
 			if(!nrrects)
 				nrrects = (
 					new Set([...range.getClientRects()]
@@ -345,8 +343,8 @@ export class TypingOverlayInputBox extends Component<Props, State>{
 			case "Tab":
 				if (!ev.getModifierState("Shift")) {
 					this.onTab(target);
-					break;
 				}
+				break;
 			default:
 				return;
 		}
@@ -361,8 +359,8 @@ export class TypingOverlayInputBox extends Component<Props, State>{
 				if (ev.getModifierState("Shift")) {
 					target.value = "";
 					this.nextTextContent();
-					break;
 				}
+				break;
 			default:
 				return;
 		}
