@@ -9,14 +9,14 @@ What It Does:
 * Analyzes your typing performance.
 
 Use Cases:
-* Checking how fast you can type with the web content you interested.
+* Checking how fast you can type with the web content you interested in.
 * memorizing terminology / spelling / lyrics / phrases.
 * Learning foreign languages by typing foreign web contents.
 
 # Practice Typing with any Web Contents
 ![](./doc/lyrics.gif)
 
-Typing Practice Anywhere provides simple and easy-to-use UI. To start typing at the current page, click the extension icon in the toolbar. The extension will highlight web contents as the mouse cursor hovers over them. Click the contents you are interested, and here you go! Show how fast you can type!
+Typing Practice Anywhere provides simple and easy-to-use UI. To start typing at the current page, click the extension icon in the toolbar. The extension will highlight web contents as the mouse cursor hovers over them. Click the contents you are interested in, and here you go! Show how fast you can type!
 
 # Composing Input Supported
 ![](./doc/composing.gif)
@@ -24,7 +24,7 @@ Typing Practice Anywhere provides simple and easy-to-use UI. To start typing at 
 
 There are a input method called "composing". It's often used when there are one-to-many relationship between what you typed and what you intended to express, like when using handwriting keyboard or the Japanese language.
 
-Typing Practice Anywhere comes with a special handling for that kind of input method. There's nothing to care, just type as you normally do, then the extension will do the job.
+Typing Practice Anywhere comes with a special handling for that kind of input method. There's nothing to care about, just type as you normally do, then the extension will do the job.
 
 # Customizable Theme
 ![](./doc/option.gif)
