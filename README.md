@@ -22,7 +22,7 @@ Typing Practice Anywhere provides simple and easy-to-use UI. To start typing pra
 ![](./doc/composing.gif)
 (image from https://www.w3.org/TR/ime-api/)
 
-There are a input method called "composing". It's often used when there are one-to-many relationship between what you've typed and what you've intended to express, like when using handwriting keyboard or the Japanese language.
+There are an input method called "composing". It's often used when there are one-to-many relationship between what you've typed and what you've intended to express, like when using handwriting keyboard or the Japanese language.
 
 Typing Practice Anywhere comes with a special handling for that kind of input method. There's nothing to care about, just type as you normally do, then the extension will do the job.
 
@@ -40,10 +40,10 @@ When Typing Practice Anywhere have done something stupid, and picked some text t
 ![](./doc/option.gif)
 (image from https://material.io/design/color/the-color-system.html#color-usage-and-palettes)
 
-Choose the best-fit colors for your environment! Changes will be applied immediately so that you can see how cool your color looks like as you tweak them.
+Choose the best-fit colors for your environment! Changes will be applied immediately so that you can see how cool your color looks as you tweak them.
 
 # Alpha Version Now
-I used to type out what I want to memorize, and it was quite effective. As many of the contents I was memorizing were from the Internet, I have automated what I was doing by integrating the process into the web browser as this extension.
+I used to repeatedly type out what I learned to memorize, and that was quite effective. As many of the contents I was memorizing were from the Internet, I have automated what I was doing by integrating the process into the web browser as this extension.
 
 I'm now actively maintaining this extension to fix bugs and expand functionality. So any bug reports or feature requests are welcome. I'll appreciate any of them.
 
